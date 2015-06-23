@@ -25,7 +25,7 @@ public class App extends Application {
             for (ActivityManager.AppTask task : tasks) {
                 final Intent i = task.getTaskInfo().baseIntent;
                 Log.d(Consts.TAG, TAG + ":intent:" + i.getAction());
-                if (i.getAction().equals(Intent.ACTIONg_MAIN)) {
+                if (i.getAction().equals(Intent.ACTION_MAIN)) {
                     Log.d(Consts.TAG, "HOORAY!   We started by click on dashboard icon!");
                 }
             }
